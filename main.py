@@ -50,7 +50,7 @@ def handle_form():
             email_error = "That is not a valid email"
             break
 
-    if at_count != 1 or period_count != 1:
+    if email != '' and (at_count != 1 or period_count != 1):
         email_error = "That is not a valid email"
 
     if username_error == '' and password_error == '' and verify_password_error == '' and email_error == '':
